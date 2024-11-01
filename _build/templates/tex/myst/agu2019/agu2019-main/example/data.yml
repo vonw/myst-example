@@ -1,0 +1,31 @@
+doc:
+  title: An AGU Journal Paper
+  description: A paper build using the offical 2019 AGU Journal Template
+  short_title: An AGU Journal Paper
+  date: 2021/08/03
+  authors:
+    - name: Anne Geosci
+      affiliations:
+        - The Earth
+      location: Sol
+      orcid: 0000-0000-0000-0001
+    - name: Bert Physics
+      affiliations:
+        - The Stars
+      location: Everywhere
+      orcid: 0000-0000-0000-0002
+      is_corresponding: true
+      email: bert.p@the-stars.org
+tagged:
+  abstract: >
+    Phase is a useful underlying property of the analytic trace model of seismic data that can be used as both an interpretation aid and a means to calibrate and check interpretations on a given seismic dataset. We introduce the analytical trace model and demonstrate some of its usages. We provide working code in python for computation of the Hilbert Transform using a robust FFT-based method and explore 2 use cases for such computed quantities. Jupyter notebooks used for computation and generation of the figures are included in this project.
+  keypoints:
+    - A paper to show off the AGU template
+    - This is example content that we have used before
+    - And this is the last keypoint, which is the last of the content on the title page
+  plain_language_summary: >
+    Phase is a useful underlying property of the analytic trace model of seismic data that can be used as both an interpretation aid and a means to calibrate and check interpretations on a given seismic dataset. We introduce the analytical trace model and demonstrate some of its usages. We provide working code in python for computation of the Hilbert Transform using a robust FFT-based method and explore 2 use cases for such computed quantities. Jupyter notebooks used for computation and generation of the figures are included in this project.
+options:
+  draft: false
+  journal_name: Reviews of Geophysics
+  keypoint_1: A keypoint!

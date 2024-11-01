@@ -1,0 +1,175 @@
+%% Copernicus Publications Manuscript Preparation Template for LaTeX Submissions
+%% ---------------------------------
+%% This template should be used for copernicus.cls
+%% The class file and some style files are bundled in the Copernicus Latex Package, which can be downloaded from the different journal webpages.
+%% For further assistance please contact Copernicus Publications at: production@copernicus.org
+%% https://publications.copernicus.org/for_authors/manuscript_preparation.html
+
+
+%% Please use the following documentclass and journal abbreviations for preprints and final revised papers.
+
+%% 2-column papers and preprints
+\documentclass[[-options.journal_name-], [# if options.proof #]proof[# else #]manuscript[# endif #]]{copernicus}
+
+
+% Curvenote Pass Options Section
+\PassOptionsToPackage{normalem}{ulem}
+\PassOptionsToPackage{utf8}{inputenc}
+
+% Curvenote Use Package Section
+% base
+\usepackage{inputenc}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{ulem}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{datetime}
+\usepackage{xkeyval}
+\usepackage{framed}
+\usepackage{pdflscape}
+\usepackage{booktabs}
+\usepackage{longtable}
+% template
+\usepackage{fancyvrb}
+
+[-IMPORTS-]
+% colors for hyperlinks
+\hypersetup{colorlinks=true, allcolors=blue}
+\hypersetup{
+pdftitle={\@title},
+pdfsubject={[-doc.description-]},
+pdfauthor={\@author},
+pdfkeywords={[-doc.keywords-]},
+addtopdfcreator={Written in Curvenote}
+}
+
+\begin{document}
+
+\title{[-doc.title-]}
+
+[# for author in doc.authors #]
+\Author[[-author.index-]]{[-author.given_name-]}{[-author.surname-]}
+[# endfor #]
+
+[# for author in doc.authors #]
+\affil[[-author.index-]]{
+[#- for affiliation in author.affiliations #]
+[-affiliation.value.name-][# if not loop.last #], [# endif #]
+[# endfor #]}
+[# endfor #]
+
+%% The [] brackets identify the author with the corresponding affiliation. 1, 2, 3, etc. should be inserted.
+
+%% If an author is deceased, please mark the respective author name(s) with a dagger, e.g. "\Author[2,$\dag$]{Anton}{Smith}", and add a further "\affil[$\dag$]{deceased, 1 July 2019}".
+
+%% If authors contributed equally, please mark the respective author names with an asterisk, e.g. "\Author[2,*]{Anton}{Smith}" and "\Author[3,*]{Bradley}{Miller}" and add a further affiliation: "\affil[*]{These authors contributed equally to this work.}".
+
+[# for author in doc.authors #]
+[# if author.corresponding #]
+\correspondence{[-author.name-] ([-author.email-])}
+[# endif #]
+[# endfor #]
+
+\runningtitle{[-doc.short_title-]}
+
+\runningauthor{[-options.running_author-]}
+
+%% These dates will be inserted by Copernicus Publications during the typesetting process.
+\received{}
+\pubdiscuss{} %% only important for two-stage journals
+\revised{}
+\accepted{}
+\published{}
+
+\firstpage{1}
+
+\maketitle
+
+\begin{abstract}
+[-parts.abstract-]
+\end{abstract}
+
+
+\copyrightstatement{[-options.copyright-]} %% This section is optional and can be used for copyright transfers.
+
+[-CONTENT-]
+
+%% The following commands are for the statements about the availability of data sets and/or software code corresponding to the manuscript.
+%% It is strongly recommended to make use of these sections in case data sets and/or software code have been part of your research the article is based on.
+
+[# if parts.code_availability #]
+\codeavailability{[-parts.code_availability-]} %% use this section when having only software code available
+[# endif #]
+
+[# if parts.data_availability #]
+\dataavailability{[-parts.data_availability-]} %% use this section when having only data sets available
+[# endif #]
+
+[# if parts.code_data_availability #]
+\codedataavailability{[-parts.code_data_availability-]} %% use this section when having data sets and software code available
+[# endif #]
+
+[# if parts.sample_availability #]
+\sampleavailability{[-parts.sample_availability-]} %% use this section when having geoscientific samples available
+[# endif #]
+
+[# if parts.video_supplement #]
+\videosupplement{[-parts.video_supplement-]} %% use this section when having video supplements available
+[# endif #]
+
+[# if parts.appendix #]
+\appendix
+[-parts.appendix-]
+\noappendix
+[# endif #]
+
+%% Regarding figures and tables in appendices, the following two options are possible depending on your general handling of figures and tables in the manuscript environment:
+
+%% Option 1: If you sorted all figures and tables into the sections of the text, please also sort the appendix figures and appendix tables into the respective appendix sections.
+%% They will be correctly named automatically.
+
+%% Option 2: If you put all figures after the reference list, please insert appendix tables and figures after the normal tables and figures.
+%% To rename them correctly to A1, A2, etc., please add the following commands in front of them:
+
+[# if parts.appendix_figures #]
+\appendixfigures  %% needs to be added in front of appendix figures
+%% Please add \clearpage between each table and/or figure. Further guidelines on figures and tables can be found below.
+[-parts.appendix_figures-]
+[# endif #]
+
+[# if parts.appendix_tables #]
+\appendixtables   %% needs to be added in front of appendix tables
+%% Please add \clearpage between each table and/or figure. Further guidelines on figures and tables can be found below.
+[-parts.appendix_tables-]
+[# endif #]
+
+[# if parts.author_contribution #]
+\authorcontribution{[-parts.author_contribution-]} %% this section is mandatory
+[# endif #]
+
+[# if parts.competing_interests #]
+\competinginterests{[-parts.competing_interests-]} %% this section is mandatory even if you declare that no competing interests are present
+[# endif #]
+
+[# if parts.disclaimer #]
+\disclaimer{[-parts.disclaimer-]} %% optional section
+[# endif #]
+
+[# if parts.acknowledgments #]
+\acknowledgments{[-parts.acknowledgments-]}
+[# endif #]
+
+
+%% REFERENCES
+\bibliographystyle{copernicus}
+\bibliography{main}
+
+\end{document}

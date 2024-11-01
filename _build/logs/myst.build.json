@@ -1,0 +1,41 @@
+{
+  "input": {
+    "files": [],
+    "opts": {
+      "execute": false,
+      "pdf": true,
+      "tex": false,
+      "typst": false,
+      "docx": false,
+      "md": false,
+      "xml": false,
+      "meca": false,
+      "cff": false,
+      "site": false,
+      "html": false,
+      "all": false,
+      "doiBib": false,
+      "watch": false,
+      "force": false,
+      "checkLinks": false,
+      "strict": false,
+      "ci": false,
+      "maxSizeWebp": 1572864
+    }
+  },
+  "exports": [
+    {
+      "format": "pdf",
+      "template": "agu2019",
+      "output": "/Users/vonw/work/software/myst/publication/test/exports/WaldenEtAl_2024.pdf",
+      "articles": [
+        {
+          "file": "/Users/vonw/work/software/myst/publication/test/article.md",
+          "level": 0
+        }
+      ],
+      "$file": "/Users/vonw/work/software/myst/publication/test/article.md",
+      "$project": "/Users/vonw/work/software/myst/publication/test"
+    }
+  ]
+}

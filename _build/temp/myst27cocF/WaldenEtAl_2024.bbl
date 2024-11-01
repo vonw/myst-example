@@ -1,0 +1,69 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Knuteson%
+\ \protect \BOthers {.}}{%
+Knuteson%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2004}}%
+{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
+knutesonAtmosphericEmittedRadiance2004b}
+\APACinsertmetastar {%
+knutesonAtmosphericEmittedRadiance2004b}%
+\begin{APACrefauthors}%
+Knuteson, R\BPBI O.%
+, Revercomb, H\BPBI E.%
+, Best, F\BPBI A.%
+, Ciganovich, N\BPBI C.%
+, Dedecker, R\BPBI G.%
+, Dirkx, T\BPBI P.%
+\BDBL {}Tobin, D\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004{\protect \BCnt {1}}}{12}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Atmospheric {Emitted} {Radiance} {Interferometer}.
+  {Part} {II}: Instrument {Performance}} {Atmospheric {Emitted} {Radiance}
+  {Interferometer}. {Part} {II}: Instrument {Performance}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Atmospheric and Oceanic
+  Technology}{21}{12}{1777--1789}.
+\newblock
+\begin{APACrefDOI} \doi{10.1175/JTECH-1663.1} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Knuteson%
+\ \protect \BOthers {.}}{%
+Knuteson%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2004}}%
+{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+knutesonAtmosphericEmittedRadiance2004a}
+\APACinsertmetastar {%
+knutesonAtmosphericEmittedRadiance2004a}%
+\begin{APACrefauthors}%
+Knuteson, R\BPBI O.%
+, Revercomb, H\BPBI E.%
+, Best, F\BPBI A.%
+, Ciganovich, N\BPBI C.%
+, Dedecker, R\BPBI G.%
+, Dirkx, T\BPBI P.%
+\BDBL {}Tobin, D\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004{\protect \BCnt {2}}}{12}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Atmospheric {Emitted} {Radiance} {Interferometer}.
+  {Part} {I}: Instrument {Design}} {Atmospheric {Emitted} {Radiance}
+  {Interferometer}. {Part} {I}: Instrument {Design}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Atmospheric and Oceanic
+  Technology}{21}{12}{1763--1776}.
+\newblock
+\begin{APACrefDOI} \doi{10.1175/JTECH-1662.1} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

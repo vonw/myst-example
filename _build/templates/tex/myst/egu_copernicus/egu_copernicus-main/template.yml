@@ -1,0 +1,216 @@
+jtex: v1
+title: EGU Copernicus
+description: A template based on the the Copernicus Publications LaTeX Macro Package
+authors:
+  - name: Copernicus Publications (Copernicus GmbH)
+    affiliations:
+      - SPIE
+    website: https://www.spie.org/
+version: '6.8'
+license: CC-BY-4.0
+thumbnail: thumbnail.png
+tags:
+  - paper
+  - journal
+source: https://www.soil-journal.net/Copernicus_LaTeX_Package.zip
+build:
+  engine: -pdf -bibtex
+parts:
+  - id: abstract
+    required: true
+    description: >
+      the abstract should be intelligible to the general reader without
+      reference to the text.
+
+      After a brief introduction of the topic, the summary recapitulates the key
+      points of the
+
+      article and mentions possible directions for prospective research.
+      Reference citations
+
+      should not be included in this section, unless urgently required, and
+      abbreviations should
+
+      not be included without explanations. An abstract should be short, clear,
+      concise, and written
+
+      in English with correct spelling and good sentence structure.
+  - id: author_contribution
+    required: true
+    description: this section is mandatory
+  - id: competing_interests
+    required: true
+    description: >-
+      this section is mandatory even if you declare that no competing interests
+      are present
+  - id: disclaimer
+    description: optional disclaimer section
+  - id: acknowledgments
+    description: optional acknowledgments section
+  - id: code_availability
+    description: use this section when having only software code available
+  - id: data_availability
+    description: use this section when having only data sets available
+  - id: code_data_availability
+    description: use this section when having data sets and software code available
+  - id: sample_availability
+    description: use this section when having geoscientific samples available
+  - id: video_supplement
+    description: use this section when having video supplements available
+  - id: appendix
+    description: the main appendix section
+  - id: appendix_figures
+    description: a figures appendix section
+  - id: appendix_tables
+    description: a tables appendix section
+doc:
+  - id: title
+    required: true
+  - id: description
+    required: true
+  - id: authors
+    required: true
+  - id: keywords
+    required: true
+  - id: short_title
+    title: Running Title
+    required: true
+    description: Set a shorter running version of the title
+options:
+  - id: journal_name
+    type: choice
+    description: |
+      Name of the MDPI Journal being submitted to
+    required: true
+    default: soil
+    choices:
+      - adgeo
+      - ars
+      - asr
+      - ascmo
+      - angeo
+      - aab
+      - acp
+      - amt
+      - bg
+      - cp
+      - deuquasp
+      - dwes
+      - esurf
+      - esd
+      - essd
+      - egqsj
+      - egusphere
+      - ejm
+      - fr
+      - gchron
+      - gh
+      - gc
+      - gi
+      - gmd
+      - hgss
+      - hess
+      - jbji
+      - jm
+      - jsss
+      - mr
+      - ms
+      - nhess
+      - npg
+      - os
+      - polf
+      - pb
+      - piahs
+      - sand
+      - sd
+      - soil
+      - se
+      - tc
+      - wcd
+      - we
+      - wes
+  - id: running_author
+    title: Running Author
+    type: string
+    required: true
+    description: Set a short running author string
+  - id: proof
+    title: Proof
+    type: boolean
+    description: Mark as proof
+  - id: copyright
+    title: Copyright Statement
+    type: string
+    description: >-
+      Usually set by EGU, this is optional and can be used for copyright
+      transfers
+    default: ''
+files:
+  - template.tex
+  - copernicus.bst
+  - copernicus.cls
+  - copernicus.cfg
+  - pdfscreen.sty
+  - pdfscreencop.sty
+packages:
+  - 0 0 0
+  - accents
+  - adjustbox
+  - algorithm
+  - algorithmic
+  - amsbsy
+  - amsfonts
+  - amsmath
+  - amssymb
+  - amsthm
+  - array
+  - babel
+  - booktabs
+  - breakurl
+  - calc
+  - cancel
+  - caption
+  - color
+  - comment
+  - datetime
+  - enumitem
+  - etoolbox
+  - fancybox
+  - fancyvrb
+  - fixltx2e
+  - float
+  - fontawesome
+  - fontawesome5
+  - fontenc
+  - framed
+  - graphicx
+  - hvams
+  - hvmath
+  - hyperref
+  - inputenc
+  - lineno
+  - listings
+  - longtable
+  - mathtime
+  - microtype
+  - multirow
+  - natbib
+  - nicefrac
+  - pdflscape
+  - pdfscreencop
+  - pifont
+  - regexpatch
+  - rotating
+  - shortvrb
+  - subfig
+  - subfloat
+  - supertabular
+  - tabularx
+  - textcomp
+  - times
+  - truncate
+  - ucharacters
+  - ulem
+  - upquote
+  - url
+  - xkeyval
